@@ -1,0 +1,124 @@
+{
+  "users": [
+    {
+      "email": "michellecaner@gmail.com",
+      "firstName": "Michelle",
+      "lastName": "Caner",
+      "id": 1
+    },
+    {
+      "email": "tfoster@gmail.com",
+      "firstName": "Tara",
+      "lastName": "Foster",
+      "id": 2
+    }, 
+    {
+      "email": "megancain@gmail.com",
+      "firstName": "Megan",
+      "lastName": "Cain",
+      "id": 3
+    },
+    {
+      "email": "stephaniesaujon@gmail.com",
+      "firstName": "Stephanie",
+      "lastName": "Saujon",
+      "id": 4
+    }
+  ],
+  "affirmations": [
+    {
+      "id": 1,
+      "description": "You got this!",
+      "userId": 1
+    },
+    {
+      "id": 2,
+      "description": "Today is the day for action",
+      "userId": 1
+    },
+    {
+      "id": 3,
+      "description": "Don't be afraid to fail.",
+      "userId": 1
+    }, 
+    {
+      "id": 4,
+      "description": "Practice makes progress!",
+      "userId": 1
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "type": "school"
+    },
+    {
+      "id": 2,
+      "type": "work"
+    },
+    {
+      "id": 3,
+      "type": "hobby"
+    },
+    {
+      "id": 4,
+      "type": "personal"
+    }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "title": "NSS Capstone",
+      "description": "My first react app developed at NSS focusing on progress tracking.",
+      "userId": 1,
+      "categoryId": 1
+    },
+    {
+      "id": 2,
+      "title": "Dancing with Veils",
+      "description": "Learning to dance with weighted veils for the first time.",
+      "userId": 1,
+      "categoryId": 3
+    },
+    {
+      "id": 3,
+      "title": "Linked-In Profile",
+      "description": "Getting that Linked-In profile to where it needs to be.",
+      "userId": 1,
+      "categoryId": 2
+    },
+    {
+      "id": 4,
+      "title": "Weight Training",
+      "description": "Re-starting my weight training journey.",
+      "userId": 1,
+      "categoryId": 4
+    }
+  ],
+  "projectItem": [
+    {
+      "id": 1,
+      "progress": "Created my repo & basic file structure.",
+      "dateTime": "3/7/2022, 8:25:53 PM",
+      "projectId": 1
+    },
+    {
+      "id": 2,
+      "progress": "Signed up for a month long class.",
+      "dateTime": "2/7/2022, 3:45:58 PM",
+      "projectId": 2
+    },
+    {
+      "id": 3,
+      "progress": "Took new, well-lit selfies.",
+      "dateTime": "3/6/2022, 4:30:13 PM",
+      "projectId": 3
+    },
+    {
+      "id": 4,
+      "progress": "Signed up with a new trainer.",
+      "dateTime": "3/1/2022, 9:15:33 AM",
+      "projectId": 4
+    }
+  ]
+}
