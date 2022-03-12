@@ -1,30 +1,25 @@
 import React from "react"
 import { Link } from "react-router-dom"
+import "./NavBar.css"
 
-
-export const NavBar = (props) => {
+export const NavBar = () => {
   return (
-    
-    <nav className="navbar bg-dark text-white flex-md-nowrap p-0 shadow">
-      
-      <ul className="nav nav-pills nav-fill">
-        
-        <li className="nav-item">
-          <Link className="nav-link" to="/"><img src={'/images/image2vector.svg'} alt="home" /></Link>
-            </li>
-            
-        <li className="nav-item">
-          <Link className="nav-link" to="/projects">My Projects</Link>
-        </li>
-
-        <li className="nav-item">
-          <Link className="nav-link" to="/categories">Catagories</Link>
-        </li>
-
-        <li className="nav-item">
-          <Link className="nav-link" to="/complete-projects">Complete Projects</Link>
-        </li>
+      <ul className="navbar">
+          <li className="navbar__item active">
+              <Link className="navbar__link" to="/home">Progress Tracker</Link>
+          </li>
+          <li className="navbar__item">
+              <Link className="navbar__link" to="/projects">My Projects</Link>
+          </li>
+          <li className="navbar__item">
+              <Link className="navbar__link" to="/categories">Categories</Link>
+          </li>
+          <li className="navbar__item">
+              <Link className="navbar__link" to="/completed">Completed Projects</Link>
+          </li>
+          <li className="navbar__item">
+              <Link className="navbar__link" to="/logout">Log Out</Link>
+          </li>
       </ul>
-    </nav>
   )
 }
