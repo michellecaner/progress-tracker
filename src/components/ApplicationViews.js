@@ -4,6 +4,8 @@ import { Login } from './auth/Login'
 import { Register } from './auth/Register'
 import { Home } from "./Home"
 import { ProjectCard } from './project/ProjectCard.js'
+import { CategoryCard } from './category/CategoryCard'
+import { AffirmationCard } from "./affirmation/AffirmationCard"
 
 
 export const ApplicationViews = ({ isAuthenticated, setIsAuthenticated }) => {
@@ -32,6 +34,18 @@ export const ApplicationViews = ({ isAuthenticated, setIsAuthenticated }) => {
         <Route path="/projects" element={
           <PrivateRoute> 
             <ProjectCard />
+          </PrivateRoute>  
+        } />
+
+        <Route path="/categories" element={
+          <PrivateRoute> 
+            <CategoryCard />
+          </PrivateRoute>  
+        } />
+
+        <Route path="/affirmations" element={
+          <PrivateRoute> 
+            <AffirmationCard />
           </PrivateRoute>  
         } />
 
