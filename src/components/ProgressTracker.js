@@ -1,7 +1,9 @@
-import React,  {useState} from "react"
+import React, {useState} from "react"
 import { ApplicationViews } from "./ApplicationViews"
 import { NavBar } from "./nav/NavBar"
 import "./ProgressTracker.css"
+
+
 
 export const ProgressTracker = () => {
   const [isAuthenticated, setIsAuthenticated] = useState(sessionStorage.getItem("nutshell_user") !== null)
