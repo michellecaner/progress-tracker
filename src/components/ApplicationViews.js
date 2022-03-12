@@ -3,9 +3,9 @@ import { Route, Routes, Navigate } from "react-router-dom"
 import { Login } from './auth/Login'
 import { Register } from './auth/Register'
 import { Home } from "./Home"
-import { ProjectCard } from './project/ProjectCard.js'
-import { CategoryCard } from './category/CategoryCard'
-import { AffirmationCard } from "./affirmation/AffirmationCard"
+import { ProjectList } from './project/ProjectList.js'
+import { CategoryList } from './category/CategoryList'
+import { AffirmationList } from "./affirmation/AffirmationList"
 
 
 export const ApplicationViews = ({ isAuthenticated, setIsAuthenticated }) => {
@@ -33,19 +33,19 @@ export const ApplicationViews = ({ isAuthenticated, setIsAuthenticated }) => {
 
         <Route path="/projects" element={
           <PrivateRoute> 
-            <ProjectCard />
+            <ProjectList />
           </PrivateRoute>  
         } />
 
         <Route path="/categories" element={
           <PrivateRoute> 
-            <CategoryCard />
+            <CategoryList />
           </PrivateRoute>  
         } />
 
         <Route path="/affirmations" element={
           <PrivateRoute> 
-            <AffirmationCard />
+            <AffirmationList />
           </PrivateRoute>  
         } />
 
