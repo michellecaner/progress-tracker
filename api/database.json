@@ -2,27 +2,28 @@
   "users": [
     {
       "email": "michellecaner@gmail.com",
-      "firstName": "Michelle",
-      "lastName": "Caner",
+      "name": "Michelle Caner",
       "id": 1
     },
     {
-      "email": "tfoster@gmail.com",
-      "firstName": "Tara",
-      "lastName": "Foster",
+      "email": "tarafoster@gmail.com",
+      "name": "Tara Foster",
       "id": 2
-    }, 
+    },
     {
       "email": "megancain@gmail.com",
-      "firstName": "Megan",
-      "lastName": "Cain",
+      "name": "Megan Cain",
       "id": 3
     },
     {
       "email": "stephaniesaujon@gmail.com",
-      "firstName": "Stephanie",
-      "lastName": "Saujon",
+      "name": "Stephanie Saujon",
       "id": 4
+    },
+    {
+      "email": "thammock@gmail.com",
+      "name": "Tekisha Hammock",
+      "id": 5
     }
   ],
   "affirmations": [
@@ -40,7 +41,7 @@
       "id": 3,
       "description": "Don't be afraid to fail.",
       "userId": 1
-    }, 
+    },
     {
       "id": 4,
       "description": "Practice makes progress!",
