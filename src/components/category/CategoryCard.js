@@ -1,8 +1,16 @@
 import React from "react"
 import "./Category.css"
 
-export const CategoryCard = ({key, category}) => (
-    <section className="category">
-        <h3 className="category__type">{category.type}</h3>
-    </section>
-)
+export const CategoryCard = ({key, category}) => {
+        return (
+        <div className="card">
+            <div className="card-content">
+              <picture>
+                <img src={'/images/icons8-category-48.png'} alt="Category Icon" />
+              </picture>
+              <h3><span className="category__title">{category.type}
+              </span></h3>
+            </div>
+        </div>
+        )
+      }
