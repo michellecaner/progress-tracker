@@ -45,6 +45,14 @@ img {
   color: darkslategrey;
 }
 
+.project__category {
+  display: flex;
+}
+
+.project__category__type {
+  margin: .75rem;
+}
+
 .card button {
   background-color: cornflowerblue;
   border: none;
