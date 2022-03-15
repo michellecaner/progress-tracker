@@ -3,9 +3,10 @@ import { Route, Routes, Navigate } from "react-router-dom"
 import { Login } from './auth/Login'
 import { Register } from './auth/Register'
 import { Home } from "./Home"
-import { ProjectList } from './project/ProjectList.js'
+import { ProjectList } from './project/ProjectList'
 import { CategoryList } from './category/CategoryList'
 import { AffirmationList } from "./affirmation/AffirmationList"
+import { ProjectDetail } from "./project/ProjectDetail"
 
 
 export const ApplicationViews = ({ isAuthenticated, setIsAuthenticated }) => {
@@ -31,10 +32,16 @@ export const ApplicationViews = ({ isAuthenticated, setIsAuthenticated }) => {
           </PrivateRoute>
         } />   
 
-        <Route path="/projects" element={
+        <Route exact path="/projects" element={
           <PrivateRoute> 
             <ProjectList />
           </PrivateRoute>  
+        } />
+
+        <Route path="/projects/:projectId" element={
+          <PrivateRoute> 
+            <ProjectDetail />
+          </PrivateRoute>    
         } />
 
         <Route path="/categories" element={

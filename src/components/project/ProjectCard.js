@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "react-router-dom";
 import "./Project.css"
 
 export const ProjectCard = ({project, handleDeleteProject}) => {
@@ -17,7 +18,10 @@ export const ProjectCard = ({project, handleDeleteProject}) => {
               </picture>
               <div className="project__category__type">{project.category.type}</div>
             </div>
-              <button type="button" onClick={() => handleDeleteProject(project.id)}>Delete</button>
+            <Link to={`/projects/${project.id}`}>
+              <button>Details</button>
+            </Link>
+            <button type="button" onClick={() => handleDeleteProject(project.id)}>Delete</button>
           </div>
       </div>  
     )
