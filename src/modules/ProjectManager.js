@@ -7,6 +7,12 @@ export const getProjectById = (projectId) => {
 }
 
 export const getAllProjects = () => {
-  return fetch(`${remoteURL}/projects`)
+  return fetch(`${remoteURL}/projects?_expand=category`)
   .then(res => res.json())
+}
+
+export const deleteProject = (id) => {
+  return fetch(`${remoteURL}/projects/${id}`, {
+    method: "DELETE"
+  }).then(result => result.json())
 }
