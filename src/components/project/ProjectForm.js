@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { addProject } from '../../modules/ProjectManager';
+import { getAllCategories } from '../../modules/CategoryManager';
 import './ProjectForm.css'
 
 export const ProjectForm = () => {
@@ -10,6 +11,7 @@ export const ProjectForm = () => {
 	const [project, setProject] = useState({
 		title: "",
 		description: "",
+    userId: "",
 		categoryId: 0
 	});
 
@@ -42,8 +44,9 @@ export const ProjectForm = () => {
 	}
 
     useEffect(() => {
-		//load category data and setState
-	}, []);
+      getAllCategories().then
+      (setCategories)	
+    }, []);
 
 
 	const handleClickSaveProject = (event) => {
@@ -66,24 +69,24 @@ export const ProjectForm = () => {
 			<h2 className="projectForm__title">New Project</h2>
 			<fieldset>
 				<div className="form-group">
-					<label htmlFor="title">Project title:</label>
+					<label htmlFor="title">Project title: </label>
 					<input type="text" id="title" onChange={handleControlledInputChange} required autoFocus className="form-control" placeholder="Enter project title here..." value={project.title} />
 				</div>
 			</fieldset>
 			<fieldset>
 				<div className="form-group">
-					<label htmlFor="description">Project description:</label>
+					<label htmlFor="description">Project description: </label>
 					<input type="text" id="description" onChange={handleControlledInputChange} required autoFocus className="form-control" placeholder="Enter project description here..." value={project.description} />
 				</div>
 			</fieldset>
 			<fieldset>
 				<div className="form-group">
-					<label htmlFor="category">Pick a category: </label>
+					<label htmlFor="category">Project category: </label>
 					<select value={project.categoryId} name="categoryId" id="categoryId" onChange={handleControlledInputChange} className="form-control" >
 						<option value="0">Select a category...</option>
 						{categories.map(c => (
 							<option key={c.id} value={c.id}>
-								{c.name}
+								{c.type}
 							</option>
 						))}
 					</select>

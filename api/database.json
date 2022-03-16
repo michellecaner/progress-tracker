@@ -94,6 +94,12 @@
       "description": "Re-starting my weight training journey.",
       "userId": 1,
       "categoryId": 4
+    },
+    {
+      "title": "New Costume",
+      "description": "Time to make a new stage costume using fabric, notions & trim I already own.",
+      "categoryId": 3,
+      "id": 5
     }
   ],
   "projectItem": [

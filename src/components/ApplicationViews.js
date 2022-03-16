@@ -6,8 +6,10 @@ import { Home } from "./Home"
 import { ProjectList } from './project/ProjectList'
 import { CategoryList } from './category/CategoryList'
 import { AffirmationList } from "./affirmation/AffirmationList"
+import { UserList } from "./user/UserList"
 import { ProjectDetail } from "./project/ProjectDetail"
 import { ProjectForm } from "./project/ProjectForm"
+
 
 
 export const ApplicationViews = ({ isAuthenticated, setIsAuthenticated }) => {
@@ -63,6 +65,11 @@ export const ApplicationViews = ({ isAuthenticated, setIsAuthenticated }) => {
           </PrivateRoute>  
         } />
 
+        <Route path="/users" element={
+          <PrivateRoute> 
+            <UserList />
+          </PrivateRoute>  
+        } />
       </Routes>    
     </>
   )
