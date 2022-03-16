@@ -30,15 +30,23 @@ export const ProjectDetail = () => {
 
   return (
     <section className="project">
-      <h3 className="project__title">{project.title}</h3>
-      <div className="project__description">{project.description}</div>
-      <div className="project__user">User: {project.user?.name}</div>
-      <div className="project__category">Category: {project.category?.type}</div>
+      <picture>
+              <img src={'/images/icons8-project-64.png'} alt="Project Icon" />
+            </picture>
+            <h3><span className="project__title">{project.title}
+            </span></h3>
+            <div className="project__description">{project.description}</div>
+            <div className="project__category">
+              <picture>
+                <img src={'/images/icons8-category-48.png'} alt="Category Icon" />
+              </picture>
+              <div className="project__category__type">{project.category.type}</div>
+            </div>
 
       <button type="button" disabled={isLoading} onClick={handleDelete}>
           Delete
       </button>
-      
+
     </section>
   );
 }

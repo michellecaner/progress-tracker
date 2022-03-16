@@ -7,6 +7,7 @@ import { ProjectList } from './project/ProjectList'
 import { CategoryList } from './category/CategoryList'
 import { AffirmationList } from "./affirmation/AffirmationList"
 import { ProjectDetail } from "./project/ProjectDetail"
+import { ProjectForm } from "./project/ProjectForm"
 
 
 export const ApplicationViews = ({ isAuthenticated, setIsAuthenticated }) => {
@@ -41,6 +42,12 @@ export const ApplicationViews = ({ isAuthenticated, setIsAuthenticated }) => {
         <Route path="/projects/:projectId" element={
           <PrivateRoute> 
             <ProjectDetail />
+          </PrivateRoute>    
+        } />
+
+        <Route path="/projects/create" element={
+          <PrivateRoute> 
+            <ProjectForm />
           </PrivateRoute>    
         } />
 
