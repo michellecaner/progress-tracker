@@ -16,3 +16,13 @@ export const deleteProject = (id) => {
     method: "DELETE"
   }).then(result => result.json())
 }
+
+export const addProject = (newProject) => {
+  return fetch(`${remoteURL}/projects`, {
+      method: "POST",
+      headers: {
+          "Content-Type": "application/json"
+      },
+      body: JSON.stringify(newProject)
+  }).then(response => response.json())
+}
