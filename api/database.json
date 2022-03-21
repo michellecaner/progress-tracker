@@ -98,6 +98,7 @@
     {
       "title": "New Costume",
       "description": "Time to make a new stage costume using fabric, notions & trim I already own.",
+      "userId": 1,
       "categoryId": 3,
       "id": 5
     }

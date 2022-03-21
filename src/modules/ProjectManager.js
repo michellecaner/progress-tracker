@@ -26,3 +26,13 @@ export const addProject = (newProject) => {
       body: JSON.stringify(newProject)
   }).then(response => response.json())
 }
+
+export const addProjectItem = (newProjectItem) => {
+  return fetch(`${remoteURL}/projectItem`, {
+      method: "POST",
+      headers: {
+          "Content-Type": "application/json"
+      },
+      body: JSON.stringify(newProjectItem)
+  }).then(response => response.json())
+}

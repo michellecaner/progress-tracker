@@ -52,6 +52,8 @@ export const ProjectForm = () => {
 	const handleClickSaveProject = (event) => {
 		event.preventDefault() //Prevents the browser from submitting the form
 
+		const user = JSON.parse(sessionStorage.getItem('nutshell_user'))
+		project.userId = user.id
 		const categoryId = project.categoryId
 
 		if (categoryId === 0 ) {
