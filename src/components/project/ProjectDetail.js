@@ -11,7 +11,7 @@ import './ProjectItemCard.css';
 export const ProjectDetail = () => {
   const [project, setProject] = useState({ description: "", category: "" });
 
-  const [projectItem, setProjectItem] = useState({ progress: "", dateTime: "" });
+  const [projectItems, setProjectItems] = useState({ progress: "", dateTime: "" });
 
   const [isLoading, setIsLoading] = useState(true);
 
@@ -20,7 +20,7 @@ export const ProjectDetail = () => {
   const [showProgress, setProgress] = useState(true);
 
   const {projectId} = useParams();
-  const {projectItemId} = useParams;
+  // const {projectItemId} = useParams;
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -31,17 +31,16 @@ export const ProjectDetail = () => {
         setProject(project);
         setIsLoading(false)
       });
-  }, [projectId]);
+  }, []);
   
   useEffect(() => {
     //getProjectById(id) from ProjectManager and hang on to the data; put it into state
-    console.log("useEffect", projectItemId)
-    getProjectItemById(projectItemId)
+    getProjectItemById(projectId)
       .then(projectItem => {
-        setProjectItem(projectItem);
+        setProjectItems(projectItem);
         setIsLoading(false)
       });
-  }, [projectItemId]);
+  }, []);
 
   const handleDelete = () => {
     setIsLoading(true);
@@ -79,10 +78,10 @@ export const ProjectDetail = () => {
         projectId={projectId} />)
       }
 
-      <ProjectItemList />
+      <ProjectItemList 
+      projectItems={projectItems} />
       
     </section>
   );
 }
 
-{/* <ProjectItemCard /> */}

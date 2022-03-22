@@ -37,8 +37,9 @@ export const addProjectItem = (newProjectItem) => {
   }).then(response => response.json())
 }
 
-export const getProjectItemById = (projectItemId) => {
-  return fetch(`${remoteURL}/projects/${projectItemId}`)
+// HAVING PROBLEMS HERE WITH THESE EXTESIONS
+export const getProjectItemById = (projectId) => {
+  return fetch(`${remoteURL}/projectItem/?_projectId=${projectId}`)
   .then(res => res.json())
 }
 

@@ -1,22 +1,16 @@
-import React, { useEffect } from 'react';
-import { getAllProjectItems, getProjectItemById } from '../../modules/ProjectManager';
+import React, { useEffect, useState } from 'react';
 import { ProjectItemCard } from './ProjectItemCard';
 
 
-export const ProjectItemList = () => {
-  const getProjectItems = () => {
-    return getAllProjectItems().then(projectItemsFromAPI => {
-      console.log(projectItemsFromAPI);
-    });
-  };
-
-  useEffect(() => {
-    getProjectItems();
-  }, []);
+export const ProjectItemList = ({projectItems}) => {
 
   return (
     <div className="container-cards">
-      <ProjectItemCard />
+       {projectItems.map(projectItem => 
+        <ProjectItemCard 
+        key={projectItem.id}
+        projectItem={projectItem} />
+      )}
     </div>
   );
 };
