@@ -6,16 +6,16 @@ import "./ProgressTracker.css"
 
 
 export const ProgressTracker = () => {
-  const [isAuthenticated, setIsAuthenticated] = useState(sessionStorage.getItem("nutshell_user") !== null)
+  const [isAuthenticated, setIsAuthenticated] = useState(sessionStorage.getItem("project_user") !== null)
 
   const setAuthUser = (user) => {
-      sessionStorage.setItem("nutshell_user", JSON.stringify(user))
-      setIsAuthenticated(sessionStorage.getItem("nutshell_user") !== null)
+      sessionStorage.setItem("project_user", JSON.stringify(user))
+      setIsAuthenticated(sessionStorage.getItem("project_user") !== null)
   }
 
   const clearUser = () => {
       sessionStorage.clear();
-      setIsAuthenticated(sessionStorage.getItem("nutshell_user") !== null)
+      setIsAuthenticated(sessionStorage.getItem("project_user") !== null)
   }
 
   return (
