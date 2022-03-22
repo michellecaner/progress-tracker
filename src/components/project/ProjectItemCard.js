@@ -1,13 +1,19 @@
 import React from "react";
 import "./ProjectItemCard.css"
 
-export const ProjectItemCard = () => {
+export const ProjectItemCard = ({ projectItem }) => {
   return (
-  <>
-    <section className="project__item">
-      <h3 className="progress__text">TEST</h3>
-      <div className="progress__timestamp">DATE/TIME</div>
-    </section>
-  </> 
-  )
+    <div className="card">
+    <div className="card-content">
+      <picture>
+        <img src={'/images/dog.svg'} alt="Progress Icon" />
+      </picture>
+      <h3>Progress: <span className="card-progress">
+        {projectItem.progress}
+      </span></h3>
+      <p>{projectItem.dateTime}</p>
+    </div>
+  </div>
+);
 }
+
