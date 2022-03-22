@@ -1,18 +1,26 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from "react-router-dom"
-import { deleteProject, getProjectById } from '../../modules/ProjectManager';
+import { deleteProject, getProjectById, getProjectItemById } from '../../modules/ProjectManager';
 import { ProjectItemForm } from './ProjectItemForm';
+import { ProjectItemList } from './ProjectItemList';
 import './ProjectDetail.css';
 import './ProjectItemForm.css';
+import './ProjectItemCard.css';
 
 
 export const ProjectDetail = () => {
   const [project, setProject] = useState({ description: "", category: "" });
+
+  const [projectItem, setProjectItem] = useState({ progress: "", dateTime: "" });
+
   const [isLoading, setIsLoading] = useState(true);
 
   const [showForm, setShowForm] = useState(false);
 
+  const [showProgress, setProgress] = useState(true);
+
   const {projectId} = useParams();
+  const {projectItemId} = useParams;
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -24,9 +32,18 @@ export const ProjectDetail = () => {
         setIsLoading(false)
       });
   }, [projectId]);
+  
+  useEffect(() => {
+    //getProjectById(id) from ProjectManager and hang on to the data; put it into state
+    console.log("useEffect", projectItemId)
+    getProjectItemById(projectItemId)
+      .then(projectItem => {
+        setProjectItem(projectItem);
+        setIsLoading(false)
+      });
+  }, [projectItemId]);
 
   const handleDelete = () => {
-    //invoke the delete function in AnimalManger and re-direct to the animal list.
     setIsLoading(true);
     deleteProject(projectId).then(() =>
       navigate("/projects")
@@ -62,7 +79,10 @@ export const ProjectDetail = () => {
         projectId={projectId} />)
       }
 
+      <ProjectItemList />
+      
     </section>
   );
 }
 
+{/* <ProjectItemCard /> */}

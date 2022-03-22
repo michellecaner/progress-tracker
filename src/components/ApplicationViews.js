@@ -10,7 +10,6 @@ import { UserList } from "./user/UserList"
 import { ProjectDetail } from "./project/ProjectDetail"
 import { ProjectForm } from "./project/ProjectForm"
 
-
 export const ApplicationViews = ({ isAuthenticated, setIsAuthenticated }) => {
   const PrivateRoute = ({ children }) => {
     return isAuthenticated ? children : <Navigate to="/login" />;
