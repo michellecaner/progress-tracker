@@ -16,8 +16,8 @@ export const ApplicationViews = ({ isAuthenticated, setIsAuthenticated }) => {
   }
 
   const setAuthUser = (user) => {
-    sessionStorage.setItem("nutshell_user", JSON.stringify(user))
-    setIsAuthenticated(sessionStorage.getItem("nutshell_user") !== null)
+    sessionStorage.setItem("project_user", JSON.stringify(user))
+    setIsAuthenticated(sessionStorage.getItem("project_user") !== null)
   }
   return (
     <>
