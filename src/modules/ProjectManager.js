@@ -36,3 +36,13 @@ export const addProjectItem = (newProjectItem) => {
       body: JSON.stringify(newProjectItem)
   }).then(response => response.json())
 }
+
+export const getProjectItemById = (projectItemId) => {
+  return fetch(`${remoteURL}/projects/${projectItemId}`)
+  .then(res => res.json())
+}
+
+export const getAllProjectItems = () => {
+  return fetch(`${remoteURL}/projectItem`)
+  .then(res => res.json())
+}

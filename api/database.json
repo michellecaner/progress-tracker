@@ -101,6 +101,13 @@
       "userId": 1,
       "categoryId": 3,
       "id": 5
+    },
+    {
+      "title": "Gardening",
+      "description": "I've always had a brown thumb and I'd love to turn it green by learning some beginner gardening techniques.",
+      "userId": 1,
+      "categoryId": 3,
+      "id": 6
     }
   ],
   "projectItem": [
@@ -108,25 +115,43 @@
       "id": 1,
       "progress": "Created my repo & basic file structure.",
       "dateTime": "3/7/2022, 8:25:53 PM",
-      "projectId": 1
+      "projectId": 1,
+      "userId": 1
     },
     {
       "id": 2,
       "progress": "Signed up for a month long class.",
       "dateTime": "2/7/2022, 3:45:58 PM",
-      "projectId": 2
+      "projectId": 2,
+      "userId": 1
     },
     {
       "id": 3,
       "progress": "Took new, well-lit selfies.",
       "dateTime": "3/6/2022, 4:30:13 PM",
-      "projectId": 3
+      "projectId": 3,
+      "userId": 1
     },
     {
       "id": 4,
       "progress": "Signed up with a new trainer.",
       "dateTime": "3/1/2022, 9:15:33 AM",
-      "projectId": 4
+      "projectId": 4,
+      "userId": 1
+    },
+    {
+      "progress": "bought seed packets",
+      "dateTime": "3/21/2022, 7:01:16 PM",
+      "projectId": "6",
+      "userId": 1,
+      "id": 5
+    },
+    {
+      "progress": "",
+      "dateTime": "3/21/2022, 7:55:55 PM",
+      "projectId": "6",
+      "userId": 1,
+      "id": 6
     }
   ]
 }
