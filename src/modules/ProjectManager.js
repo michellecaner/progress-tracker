@@ -39,11 +39,11 @@ export const addProjectItem = (newProjectItem) => {
 
 // HAVING PROBLEMS HERE WITH THESE EXTESIONS
 export const getProjectItemById = (projectId) => {
-  return fetch(`${remoteURL}/projectItem/?_projectId=${projectId}`)
+  return fetch(`${remoteURL}/projectItems/?projectId=${projectId}`)
   .then(res => res.json())
 }
 
 export const getAllProjectItems = () => {
-  return fetch(`${remoteURL}/projectItem`)
+  return fetch(`${remoteURL}/projectItems`)
   .then(res => res.json())
 }
