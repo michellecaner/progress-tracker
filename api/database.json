@@ -110,7 +110,7 @@
       "id": 6
     }
   ],
-  "projectItem": [
+  "projectItems": [
     {
       "id": 1,
       "progress": "Created my repo & basic file structure.",
@@ -152,6 +152,20 @@
       "projectId": "6",
       "userId": 1,
       "id": 6
+    },
+    {
+      "id": 7,
+      "progress": "Created functional nav bar.",
+      "dateTime": "3/12/2022, 9:25:53 AM",
+      "projectId": 1,
+      "userId": 1
+    },
+    {
+      "id": 8,
+      "progress": "Log-in page working.",
+      "dateTime": "3/27/2022, 7:25:53 PM",
+      "projectId": 1,
+      "userId": 1
     }
   ]
 }

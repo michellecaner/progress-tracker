@@ -11,7 +11,7 @@ import './ProjectItemCard.css';
 export const ProjectDetail = () => {
   const [project, setProject] = useState({ description: "", category: "" });
 
-  const [projectItems, setProjectItems] = useState({ progress: "", dateTime: "" });
+  const [projectItems, setProjectItems] = useState([]);
 
   const [isLoading, setIsLoading] = useState(true);
 
