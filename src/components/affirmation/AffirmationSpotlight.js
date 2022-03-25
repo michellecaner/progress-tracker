@@ -3,6 +3,7 @@ import { getAffirmationById } from "../../modules/AffirmationManager";
 import "./AffirmationSpotlight.css";
 
 export const AffirmationSpotlight = ({affirmationId}) => {
+
   const [affirmation, setAffirmation] = useState({});
 
   useEffect(() => {
@@ -12,11 +13,10 @@ export const AffirmationSpotlight = ({affirmationId}) => {
   }, []);
 
   return (
-    <div className="animal-spotlight">
-      {/* <img src={require('./dog.svg')} alt="My Dog" /> */}
+    <div className="affirmation-spotlight">
+      {/* <img src={require('/images/icons8-heart-64.png')} alt="My Affirmation" /> */}
       <div>
-        <h3>{animal.name}</h3>
-        <p>{animal.breed}</p>
+        <h3>{affirmation.desciption}</h3>
       </div>
     </div>
   );
