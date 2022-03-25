@@ -36,11 +36,11 @@ export const ProjectDetail = () => {
   useEffect(() => {
     //getProjectById(id) from ProjectManager and hang on to the data; put it into state
     getProjectItemById(projectId)
-      .then(projectItem => {
-        setProjectItems(projectItem);
+      .then(projectItems => {
+        setProjectItems(projectItems);
         setIsLoading(false)
       });
-  }, []);
+  }, [showForm]);
 
   const handleDelete = () => {
     setIsLoading(true);
@@ -75,7 +75,8 @@ export const ProjectDetail = () => {
       { showForm === true && (
         <ProjectItemForm
         key={project.id} 
-        projectId={projectId} />)
+        projectId={projectId}
+        setShowForm={setShowForm} />)
       }
 
       <ProjectItemList 

@@ -28,7 +28,7 @@ export const addProject = (newProject) => {
 }
 
 export const addProjectItem = (newProjectItem) => {
-  return fetch(`${remoteURL}/projectItem`, {
+  return fetch(`${remoteURL}/projectItems`, {
       method: "POST",
       headers: {
           "Content-Type": "application/json"
@@ -37,7 +37,6 @@ export const addProjectItem = (newProjectItem) => {
   }).then(response => response.json())
 }
 
-// HAVING PROBLEMS HERE WITH THESE EXTESIONS
 export const getProjectItemById = (projectId) => {
   return fetch(`${remoteURL}/projectItems/?projectId=${projectId}`)
   .then(res => res.json())

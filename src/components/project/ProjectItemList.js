@@ -6,10 +6,10 @@ export const ProjectItemList = ({projectItems}) => {
 
   return (
     <div className="container-cards">
-       {projectItems.map(projectItem => 
+       {projectItems.map(projectItems => 
         <ProjectItemCard 
-        key={projectItem.id}
-        projectItem={projectItem} />
+        key={projectItems.id}
+        projectItems={projectItems} />
       )}
     </div>
   );

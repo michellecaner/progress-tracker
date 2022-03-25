@@ -3,9 +3,9 @@ import { useNavigate } from 'react-router-dom';
 import { addProjectItem, getAllProjects } from '../../modules/ProjectManager';
 import './ProjectItemForm.css'
 
-export const ProjectItemForm = ({projectId}) => {
+export const ProjectItemForm = ({projectId, setShowForm}) => {
 
-	const [projectItem, setProjectItem] = useState({
+	const [projectItems, setProjectItems] = useState({
 		progress: "",
 		dateTime: "",
     projectId: 0,
@@ -17,10 +17,11 @@ export const ProjectItemForm = ({projectId}) => {
 
 	const navigate = useNavigate();
 
+
 	const handleControlledInputChange = (event) => {
 		/* When changing a state object or array,
 		always create a copy, make changes, and then set state.*/
-		const newProjectItem = { ...projectItem }
+		const newProjectItem = { ...projectItems }
 		let selectedVal = event.target.value
 		// forms always provide values as strings. But we want to save the ids as numbers.
 		if (event.target.id.includes("Id")) {
@@ -31,7 +32,7 @@ export const ProjectItemForm = ({projectId}) => {
 		using object bracket notation. */
 		newProjectItem[event.target.id] = selectedVal
 		// update state
-		setProjectItem(newProjectItem)
+		setProjectItems(newProjectItem)
 	}
 
 useEffect(() => {
@@ -42,14 +43,16 @@ useEffect(() => {
 const handleClickSaveProjectItem = (event) => {
 	event.preventDefault() //Prevents the browser from submitting the form
 
-	const user = JSON.parse(sessionStorage.getItem("nutshell_user"))
+	const user = JSON.parse(sessionStorage.getItem("project_user"))
 
-	const newProjectItem = { ...projectItem }
+	const newProjectItem = { ...projectItems }
 	newProjectItem.userId = user.id
 	newProjectItem.projectId = projectId
 	newProjectItem.dateTime = new Date().toLocaleString();
 	addProjectItem(newProjectItem)
-	.then(() => navigate("/projects/?"))
+	.then(() => {
+		setShowForm(false)
+	}) 
 }
 
 
@@ -59,7 +62,7 @@ const handleClickSaveProjectItem = (event) => {
 			<fieldset>
 				<div className="form-group">
 					<label htmlFor="progress">Progress: </label>
-					<input type="text" id="progress" onChange={handleControlledInputChange} required autoFocus className="form-control" placeholder="Enter progress here..." value={projectItem.progress} />
+					<input type="text" id="progress" onChange={handleControlledInputChange} required autoFocus className="form-control" placeholder="Enter progress here..." value={projectItems.progress} />
 				</div>
 			</fieldset>
 			<button className="btn btn-primary"
