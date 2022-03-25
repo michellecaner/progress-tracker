@@ -10,7 +10,7 @@ export const AffirmationSpotlight = ({affirmationId}) => {
     getAffirmationById(affirmationId).then(affirmation => {
       setAffirmation(affirmation);
     });
-  }, []);
+  }, [affirmationId]);
 
   return (
     <div className="affirmation-spotlight">
