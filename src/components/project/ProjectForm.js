@@ -51,10 +51,10 @@ export const ProjectForm = () => {
 
 	const handleClickSaveProject = (event) => {
 		event.preventDefault() //Prevents the browser from submitting the form
-
+		const newProject = { ...project }
 		const user = JSON.parse(sessionStorage.getItem('project_user'))
-		project.userId = user.id
-		const categoryId = project.categoryId
+		newProject.userId = user.id
+		const categoryId = newProject.categoryId
 
 		if (categoryId === 0 ) {
 			window.alert("Please select a category")
