@@ -1,7 +1,7 @@
 import React from "react"
 import "./User.css"
 
-export const UserCard = ({key, user}) => {
+export const UserCard = ({user}) => {
     return (
     <div className="card">
         <div className="card-content">

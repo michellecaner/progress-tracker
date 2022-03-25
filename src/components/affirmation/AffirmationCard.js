@@ -1,7 +1,7 @@
 import React from "react"
 import "./Affirmation.css"
 
-export const AffirmationCard = ({key, affirmation}) => {
+export const AffirmationCard = ({affirmation}) => {
     return (
     <div className="card">
         <div className="card-content">
