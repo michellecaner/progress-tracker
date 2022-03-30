@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { getAffirmationById } from "../../modules/AffirmationManager";
+import { AffirmationCard } from "./AffirmationCard";
 import "./AffirmationSpotlight.css";
 
 export const AffirmationSpotlight = ({affirmationId}) => {
@@ -14,9 +15,9 @@ export const AffirmationSpotlight = ({affirmationId}) => {
 
   return (
     <div className="affirmation-spotlight">
-      {/* <img src={require('/images/icons8-heart-64.png')} alt="My Affirmation" /> */}
+      {/* <img src={require('./icons8-heart-64.png')} alt="My Affirmation" /> */}
       <div>
-        <h3>{affirmation.desciption}</h3>
+        <AffirmationCard key={affirmation.id} affirmation={affirmation} />
       </div>
     </div>
   );

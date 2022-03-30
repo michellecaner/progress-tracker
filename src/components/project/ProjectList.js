@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import { ProjectCard } from './ProjectCard';
 import { getAllProjects, getProjectById, deleteProject } from '../../modules/ProjectManager';
+import { getProjectsByCategory } from '../../modules/CategoryManager';
 
 export const ProjectList = () => {
 
@@ -9,10 +10,19 @@ export const ProjectList = () => {
 
   const navigate = useNavigate();
 
+  const {categoryId} = useParams();
+
   const getProjects = () => {
-    return getAllProjects().then(projectsFromAPI => {
-      setProjects(projectsFromAPI)
-    });
+    if (categoryId) {
+      return getProjectsByCategory(parseInt(categoryId)).then(projectsFromAPI => {
+        setProjects(projectsFromAPI)
+      })
+    } else {
+      return getAllProjects().then(projectsFromAPI => {
+        setProjects(projectsFromAPI)
+      });
+    }
+   
   };
 
   useEffect(() => {

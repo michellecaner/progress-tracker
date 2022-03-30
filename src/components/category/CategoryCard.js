@@ -10,7 +10,7 @@ export const CategoryCard = ({category}) => {
                 <img src={'/images/icons8-category-48.png'} alt="Category Icon" />
               </picture>
               <h3><span className="category__title">{category.type}
-              <Link to={`/projects/${category.id}`}>
+              <Link to={`/categories/${category.id}`}>
               <button>View Projects</button>
             </Link>
               </span></h3>
