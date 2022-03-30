@@ -57,6 +57,12 @@ export const ApplicationViews = ({ isAuthenticated, setIsAuthenticated }) => {
           </PrivateRoute>  
         } />
 
+        <Route path="/categories/:categoryId" element={
+          <PrivateRoute> 
+            <ProjectList />
+          </PrivateRoute>  
+        } />
+
         <Route path="/affirmations" element={
           <PrivateRoute> 
             <AffirmationList />

@@ -10,3 +10,8 @@ export const getAllCategories = () => {
   return fetch(`${remoteURL}/categories`)
   .then(res => res.json())
 }
+
+export const getProjectsByCategory = (categoryId) => {
+  return fetch (`${remoteURL}/projects?categoryId=${categoryId}`)
+  .then(res => res.json())
+}
