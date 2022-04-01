@@ -18,16 +18,16 @@ export const Home = () => {
   
   return (
     <>
-      <h2>Progress Tracker</h2>
-      <small>Every bit counts!</small>
+      <h2>Progress Pal</h2>
+      <small>Let your growth be your guide!</small>
 
       <PropsAndState yourName={user} />
-
-      <button onClick={refreshSpotlightAffirmation}>Reload &#x27f3;</button>
 
       {
         spotlightId && <AffirmationSpotlight affirmationId={spotlightId} />
       }
+
+      <button onClick={refreshSpotlightAffirmation}>New Affirmation &#x27f3;</button>
    </>
   );
 }

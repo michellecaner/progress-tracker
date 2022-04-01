@@ -2,9 +2,38 @@
   display: flex;
   flex-wrap: nowrap;
   justify-content: left;
+  background-color: black;
+  padding: 2rem;
+  
 }
 
 .navbar__item {
   flex-basis: 20%;
   list-style-type: none;
+  
+}
+
+a.navbar__link:link { 
+  text-decoration: none; 
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a.navbar__link:visited { 
+  text-decoration: none; 
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a.navbar__link:hover { 
+  text-decoration: none; 
+  color: turquoise;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a.navbar__link:active { 
+  text-decoration: none; 
 }
