@@ -3,6 +3,7 @@ import { useNavigate, useParams } from 'react-router-dom';
 import { ProjectCard } from './ProjectCard';
 import { getAllProjects, getProjectById, deleteProject } from '../../modules/ProjectManager';
 import { getProjectsByCategory } from '../../modules/CategoryManager';
+import "./Project.css"
 
 export const ProjectList = () => {
 
@@ -40,7 +41,7 @@ export const ProjectList = () => {
       <button type="button"
           className="btn"
           onClick={() => {navigate("/projects/create")}}>
-          New Project
+          Create New Project
       </button>
     </section>
       <div className="container-cards">
