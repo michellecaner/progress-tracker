@@ -1,10 +1,17 @@
 import React, { useState } from "react"
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 import "./NavBar.css"
 
-export const NavBar = () => {
+export const NavBar = ({ clearUser, isAuthenticated }) => {
 
     const [isNavExpanded, setIsNavExpanded] = useState(false)
+
+    const history = useNavigate()
+
+    const handleLogout = () => {
+        clearUser();
+        history('/');
+    }
   
     return (
       <nav className="navbar">
@@ -33,21 +40,33 @@ export const NavBar = () => {
           }
         >
             <ul>
-                <li className="navbar__item">
+            {isAuthenticated
+                ? <li className="navbar__item">
                     <Link className="navbar__link" to="/projects">My Projects</Link>
-                </li>
-                <li className="navbar__item">
+                  </li>
+                : null}
+            {isAuthenticated
+                ? <li className="navbar__item">
                     <Link className="navbar__link" to="/categories">Categories</Link>
                 </li>
-                <li className="navbar__item">
+                : null}
+            {isAuthenticated
+               ? <li className="navbar__item">
                     <Link className="navbar__link" to="/affirmations">Affirmations</Link>
                 </li>
-                <li className="navbar__item">
+                : null}
+            {isAuthenticated
+               ? <li className="navbar__item">
                     <Link className="navbar__link" to="/users">Users</Link>
                 </li>
-                <li className="navbar__item">
-                    <Link className="navbar__link" to="/logout">Log Out</Link>
+                : null}
+            {isAuthenticated 
+               ? <li className="navbar__item">
+                     <a className="navbar__link" onClick={handleLogout}>Logout</a>
                 </li>
+                : <li className="navbar__item">
+                    <Link className="navbar__link" to="/login">Login</Link>
+                </li>}
             </ul>
         </div>
     </nav>  
