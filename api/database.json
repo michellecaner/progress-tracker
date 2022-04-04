@@ -124,20 +124,6 @@
       "description": "Re-starting my weight training journey.",
       "userId": 1,
       "categoryId": 4
-    },
-    {
-      "title": "New Costume",
-      "description": "Time to make a new stage costume using fabric, notions & trim I already own.",
-      "userId": 1,
-      "categoryId": 3,
-      "id": 5
-    },
-    {
-      "title": "Gardening",
-      "description": "I've always had a brown thumb and I'd love to turn it green by learning some beginner gardening techniques.",
-      "userId": 1,
-      "categoryId": 3,
-      "id": 6
     }
   ],
   "projectItems": [
@@ -170,13 +156,6 @@
       "userId": 1
     },
     {
-      "progress": "bought seed packets",
-      "dateTime": "3/21/2022, 7:01:16 PM",
-      "projectId": "6",
-      "userId": 1,
-      "id": 5
-    },
-    {
       "id": 7,
       "progress": "Created functional nav bar.",
       "dateTime": "3/12/2022, 9:25:53 AM",
@@ -189,6 +168,20 @@
       "dateTime": "3/27/2022, 7:25:53 PM",
       "projectId": 1,
       "userId": 1
+    },
+    {
+      "progress": "Added basic styling",
+      "dateTime": "4/4/2022, 5:14:38 PM",
+      "projectId": "1",
+      "userId": 1,
+      "id": 9
+    },
+    {
+      "progress": "Learned how to do front cross-overs and side sweeps.",
+      "dateTime": "4/4/2022, 5:32:02 PM",
+      "projectId": "2",
+      "userId": 1,
+      "id": 10
     }
   ]
 }
