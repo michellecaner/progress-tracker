@@ -124,6 +124,13 @@
       "description": "Re-starting my weight training journey.",
       "userId": 1,
       "categoryId": 4
+    },
+    {
+      "title": "Cooking Turkish Food",
+      "description": "Learning to cook traditional Turkish food while being mindful of my allergies and dietary needs.",
+      "userId": "",
+      "categoryId": 3,
+      "id": 5
     }
   ],
   "projectItems": [
@@ -182,6 +189,13 @@
       "projectId": "2",
       "userId": 1,
       "id": 10
+    },
+    {
+      "progress": "Researched spice substitutes.",
+      "dateTime": "4/4/2022, 6:19:43 PM",
+      "projectId": "5",
+      "userId": 1,
+      "id": 11
     }
   ]
 }
