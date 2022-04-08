@@ -98,13 +98,6 @@
   ],
   "projects": [
     {
-      "id": 1,
-      "title": "NSS Capstone",
-      "description": "My first react app developed at NSS focusing on progress tracking.",
-      "userId": 1,
-      "categoryId": 1
-    },
-    {
       "id": 2,
       "title": "Dancing with Veils",
       "description": "Learning to dance with weighted veils for the first time.",
@@ -124,23 +117,9 @@
       "description": "Re-starting my weight training journey.",
       "userId": 1,
       "categoryId": 4
-    },
-    {
-      "title": "Cooking Turkish Food",
-      "description": "Learning to cook traditional Turkish food while being mindful of my allergies and dietary needs.",
-      "userId": "",
-      "categoryId": 3,
-      "id": 5
     }
   ],
   "projectItems": [
-    {
-      "id": 1,
-      "progress": "Created my repo & basic file structure.",
-      "dateTime": "3/7/2022, 8:25:53 PM",
-      "projectId": 1,
-      "userId": 1
-    },
     {
       "id": 2,
       "progress": "Signed up for a month long class.",
@@ -161,27 +140,6 @@
       "dateTime": "3/1/2022, 9:15:33 AM",
       "projectId": 4,
       "userId": 1
-    },
-    {
-      "id": 7,
-      "progress": "Created functional nav bar.",
-      "dateTime": "3/12/2022, 9:25:53 AM",
-      "projectId": 1,
-      "userId": 1
-    },
-    {
-      "id": 8,
-      "progress": "Log-in page working.",
-      "dateTime": "3/27/2022, 7:25:53 PM",
-      "projectId": 1,
-      "userId": 1
-    },
-    {
-      "progress": "Added basic styling",
-      "dateTime": "4/4/2022, 5:14:38 PM",
-      "projectId": "1",
-      "userId": 1,
-      "id": 9
     },
     {
       "progress": "Learned how to do front cross-overs and side sweeps.",
