@@ -66,6 +66,7 @@ button {
   font-weight: bolder;
   font-size: large;
   cursor: pointer;
+  text-decoration: none;
 }
 
 button:hover {

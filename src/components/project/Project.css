@@ -45,8 +45,8 @@ img {
 }
 
 .card button {
-  background-color: black;
-  border: none;
+  background-color: #19a4cf;
+  border: solid;
   color: white;
   text-align: center;
   text-decoration: none;
@@ -57,10 +57,12 @@ img {
   margin: .1em;
   width: 15%;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .card button:hover {
   color: black;
+  border: none;
 }
 
 .section-content {
@@ -69,19 +71,25 @@ img {
   margin: 1rem;
 }
 
-.btn {
-  padding: .5rem;
-  background-color: black;
-  color: white;
-  cursor: pointer;
-  border: none;
+.container-cards {
+  padding: 1rem;
+  margin: 2rem;
+  border: 5px solid;
+  border-color: #fc83ab;
+  border-radius: 30px;
+  font-family: 'Montserrat Alternates', sans-serif;
+  background-color: #d9f3fa;
+  min-height: 50rem;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
-.btn:hover {
+.btn {
   padding: .5rem;
-  background-color: aquamarine;
-  color: black;
+  background-color: #19a4cf;
+  color: white;
   cursor: pointer;
-  border: none;
 }
 
