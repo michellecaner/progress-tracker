@@ -16,9 +16,7 @@ export const AffirmationSpotlight = ({affirmationId}) => {
   return (
     <div className="affirmation-spotlight">
       {/* <img src={require('./icons8-heart-64.png')} alt="My Affirmation" /> */}
-      <div>
         <AffirmationCard key={affirmation.id} affirmation={affirmation} />
-      </div>
     </div>
   );
 };

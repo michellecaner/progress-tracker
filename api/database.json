@@ -46,6 +46,36 @@
       "id": 4,
       "description": "Practice makes progress!",
       "userId": 1
+    },
+    {
+      "id": 5,
+      "description": "Meet yourself where you are at.",
+      "userId": 1
+    },
+    {
+      "id": 6,
+      "description": "Be willing to believe in yourself.",
+      "userId": 1
+    },
+    {
+      "id": 7,
+      "description": "Use obstacles to motivate your learning & growth.",
+      "userId": 1
+    },
+    {
+      "id": 8,
+      "description": "You are in the right place at the right time, doing the right thing.",
+      "userId": 1
+    },
+    {
+      "id": 9,
+      "description": "Courage starts with showing up and letting ourselves be seen.",
+      "userId": 1
+    },
+    {
+      "id": 10,
+      "description": "You have permission to be new at something!",
+      "userId": 1
     }
   ],
   "categories": [
@@ -96,25 +126,11 @@
       "categoryId": 4
     },
     {
-      "title": "New Costume",
-      "description": "Time to make a new stage costume using fabric, notions & trim I already own.",
-      "userId": 1,
+      "title": "Cooking Turkish Food",
+      "description": "Learning to cook traditional Turkish food while being mindful of my allergies and dietary needs.",
+      "userId": "",
       "categoryId": 3,
       "id": 5
-    },
-    {
-      "title": "Gardening",
-      "description": "I've always had a brown thumb and I'd love to turn it green by learning some beginner gardening techniques.",
-      "userId": 1,
-      "categoryId": 3,
-      "id": 6
-    },
-    {
-      "title": "test",
-      "description": "Time to make a new stage costume using fabric, notions & trim I already own.",
-      "userId": "",
-      "categoryId": 1,
-      "id": 7
     }
   ],
   "projectItems": [
@@ -147,13 +163,6 @@
       "userId": 1
     },
     {
-      "progress": "bought seed packets",
-      "dateTime": "3/21/2022, 7:01:16 PM",
-      "projectId": "6",
-      "userId": 1,
-      "id": 5
-    },
-    {
       "id": 7,
       "progress": "Created functional nav bar.",
       "dateTime": "3/12/2022, 9:25:53 AM",
@@ -166,6 +175,27 @@
       "dateTime": "3/27/2022, 7:25:53 PM",
       "projectId": 1,
       "userId": 1
+    },
+    {
+      "progress": "Added basic styling",
+      "dateTime": "4/4/2022, 5:14:38 PM",
+      "projectId": "1",
+      "userId": 1,
+      "id": 9
+    },
+    {
+      "progress": "Learned how to do front cross-overs and side sweeps.",
+      "dateTime": "4/4/2022, 5:32:02 PM",
+      "projectId": "2",
+      "userId": 1,
+      "id": 10
+    },
+    {
+      "progress": "Researched spice substitutes.",
+      "dateTime": "4/4/2022, 6:19:43 PM",
+      "projectId": "5",
+      "userId": 1,
+      "id": 11
     }
   ]
 }

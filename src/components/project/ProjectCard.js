@@ -9,7 +9,7 @@ export const ProjectCard = ({project, handleDeleteProject}) => {
             <picture>
               <img src={'/images/icons8-project-64.png'} alt="Project Icon" />
             </picture>
-            <h3><span className="project__title">{project.title}
+            <h3><span className="project-title">{project.title}
             </span></h3>
             <Link to={`/projects/${project.id}`}>
               <button>Details</button>

@@ -8,24 +8,54 @@
     }
   ],
   "affirmations": [
-    {
+     {
       "id": 1,
       "description": "You got this!",
       "userId": 1
     },
     {
       "id": 2,
-      "description": "Today is the day for action",
+      "description": "Today is the day for action.",
       "userId": 1
     },
     {
       "id": 3,
       "description": "Don't be afraid to fail.",
       "userId": 1
-    }, 
+    },
     {
       "id": 4,
       "description": "Practice makes progress!",
+      "userId": 1
+    },
+    {
+      "id": 5,
+      "description": "Meet yourself where you are at.",
+      "userId": 1
+    },
+    {
+      "id": 6,
+      "description": "Be willing to believe in yourself.",
+      "userId": 1
+    },
+    {
+      "id": 7,
+      "description": "Use obstacles to motivate your learning & growth.",
+      "userId": 1
+    },
+    {
+      "id": 8,
+      "description": "You are in the right place at the right time, doing the right thing",
+      "userId": 1
+    },
+    {
+      "id": 9,
+      "description": "Courage starts with showing up and letting ourselves be seen.",
+      "userId": 1
+    },
+    {
+      "id": 10,
+      "description": "You have permission to be new at something!",
       "userId": 1
     }
   ],

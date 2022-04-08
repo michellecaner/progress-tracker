@@ -46,7 +46,7 @@ img {
 }
 
 .card button {
-  background-color: cornflowerblue;
+  background-color: black;
   border: none;
   color: cornsilk;
   text-align: center;
@@ -60,5 +60,5 @@ img {
 }
 
 .card button:hover {
-  background-color: darkblue;
+  background-color: aquamarine;
 }

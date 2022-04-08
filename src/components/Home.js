@@ -21,16 +21,15 @@ export const Home = () => {
   return (
     <>
       <div className="home__page">
-        <h2>Progress Pal</h2>
-        <small>Let your growth be your guide!</small>
 
         <PropsAndState yourName={user} />
 
         {
           spotlightId && <AffirmationSpotlight affirmationId={spotlightId} />
         }
-
-        <button onClick={refreshSpotlightAffirmation}>New Affirmation &#x27f3;</button>
+          <div className="new-affirmation-btn">
+            <button onClick={refreshSpotlightAffirmation}>New Affirmation &#x27f3;</button>
+          </div>
       </div>
    </>
   );
