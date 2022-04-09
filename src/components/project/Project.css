@@ -44,7 +44,7 @@ img {
   margin: .85rem;
 }
 
-.card button {
+button {
   background-color: #19a4cf;
   border: solid;
   color: white;
@@ -55,9 +55,12 @@ img {
   padding: .5em;
   border-radius: 50px;
   margin: .1em;
-  width: 15%;
+  width: 20%;
   cursor: pointer;
-  text-decoration: none;
+}
+
+button .details-btn {
+color: black;
 }
 
 .card button:hover {

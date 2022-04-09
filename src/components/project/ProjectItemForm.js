@@ -58,17 +58,21 @@ const handleClickSaveProjectItem = (event) => {
 
 	return (
 		<form className="project__item">
-			<h2 className="project__item__title">New Progress</h2>
+			<div className="new-progress">
+				<h2 className="project__item__title">New Progress</h2>
+			</div>
 			<fieldset>
 				<div className="form-group">
 					<label htmlFor="progress">Progress: </label>
 					<input type="text" id="progress" onChange={handleControlledInputChange} required autoFocus className="form-control" placeholder="Enter progress here..." value={projectItems.progress} />
 				</div>
 			</fieldset>
-			<button className="btn btn-primary"
-				onClick={handleClickSaveProjectItem}>
-				Save Progress
-          </button>
+			<div className='save-progress'>
+				<button className="btn btn-primary"
+					onClick={handleClickSaveProjectItem}>
+					Save Progress
+				</button>
+			</div>
 		</form>
 	)
 };

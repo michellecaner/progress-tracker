@@ -117,6 +117,13 @@
       "description": "Re-starting my weight training journey.",
       "userId": 1,
       "categoryId": 4
+    },
+    {
+      "title": "NSS Capstone",
+      "description": "Creating my front end capstone with Javascript, CSS, JSX and React!",
+      "userId": "",
+      "categoryId": 1,
+      "id": 5
     }
   ],
   "projectItems": [
@@ -149,11 +156,32 @@
       "id": 10
     },
     {
-      "progress": "Researched spice substitutes.",
-      "dateTime": "4/4/2022, 6:19:43 PM",
-      "projectId": "5",
+      "progress": "Found some new music to practice to",
+      "dateTime": "4/8/2022, 8:08:17 PM",
+      "projectId": "2",
       "userId": 1,
       "id": 11
+    },
+    {
+      "progress": "Created my wireframe and ERD.",
+      "dateTime": "4/8/2022, 8:09:12 PM",
+      "projectId": "5",
+      "userId": 1,
+      "id": 12
+    },
+    {
+      "progress": "Created my repo on Github.",
+      "dateTime": "4/8/2022, 8:09:41 PM",
+      "projectId": "5",
+      "userId": 1,
+      "id": 13
+    },
+    {
+      "progress": "Made a basic nav bar.",
+      "dateTime": "4/8/2022, 8:10:18 PM",
+      "projectId": "5",
+      "userId": 1,
+      "id": 14
     }
   ]
 }

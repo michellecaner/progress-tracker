@@ -68,7 +68,9 @@ export const ProjectForm = () => {
 
 	return (
 		<form className="projectForm">
-			<h2 className="projectForm__title">New Project</h2>
+			<div className="new-project">
+				<h2>New Project</h2>
+			</div>	
 			<fieldset>
 				<div className="form-group">
 					<label htmlFor="title">Project title: </label>
@@ -94,10 +96,12 @@ export const ProjectForm = () => {
 					</select>
 				</div>
 			</fieldset>
-			<button className="btn btn-primary"
-				onClick={handleClickSaveProject}>
-				Save Project
-          </button>
+			<div className='save-project'>
+				<button className="btn btn-primary"
+					onClick={handleClickSaveProject}>
+					Save Project
+				</button>
+			</div>	
 		</form>
 	)
 };
