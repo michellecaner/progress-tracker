@@ -46,7 +46,7 @@ img {
 
 button {
   background-color: #19a4cf;
-  border: solid;
+  border: none;
   color: white;
   text-align: center;
   text-decoration: none;
@@ -59,14 +59,18 @@ button {
   cursor: pointer;
 }
 
-button .details-btn {
-color: black;
-}
 
-.card button:hover {
-  color: black;
+button:hover {
   border: none;
 }
+
+a:link { text-decoration: none; }
+
+a:visited { text-decoration: none; }
+
+a:hover { text-decoration: none; }
+
+a:active { text-decoration: none; }
 
 .section-content {
   display: flex;
