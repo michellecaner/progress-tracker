@@ -3,6 +3,7 @@
   min-height: 5rem;
 }
 
+
 .sign-in {
     display: flex;
     flex-direction: column;
@@ -19,7 +20,7 @@
 
   .sign-in-btn {
     background-color: #19a4cf;
-    border: solid;
+    border: none;
     color: white;
     text-align: center;
     text-decoration: none;

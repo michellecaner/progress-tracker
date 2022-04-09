@@ -76,6 +76,56 @@
       "id": 10,
       "description": "You have permission to be new at something!",
       "userId": 1
+    },
+    {
+      "id": 11,
+      "description": "You are a strong and capable person.",
+      "userId": 1
+    },
+    {
+      "id": 12,
+      "description": "Trust yourself to make good decisions.",
+      "userId": 1
+    },
+    {
+      "id": 13,
+      "description": "You have earned your seat at the table.",
+      "userId": 1
+    },
+    {
+      "id": 14,
+      "description": "You do not have to be perfect to be effective.",
+      "userId": 1
+    },
+    {
+      "id": 15,
+      "description": "Your opinion holds weight and has value to others.",
+      "userId": 1
+    },
+    {
+      "id": 16,
+      "description": "You are prepared to tackle any obstacle that comes your way.",
+      "userId": 1
+    },
+    {
+      "id": 17,
+      "description": "Asking for help is a sign of self-respect and self-awareness.",
+      "userId": 1
+    },
+    {
+      "id": 18,
+      "description": "You are growing and you are going at your own pace.",
+      "userId": 1
+    },
+    {
+      "id": 19,
+      "description": "You are worthy of investing in yourself.",
+      "userId": 1
+    },
+    {
+      "id": 20,
+      "description": "You have come farther than you would have ever thought possible, and you're learning along the way.",
+      "userId": 1
     }
   ],
   "categories": [
@@ -100,56 +150,77 @@
     {
       "id": 2,
       "title": "Dancing with Veils",
-      "description": "Learning to dance with weighted veils for the first time.",
+      "description": "Learning to dance with weighted veils for the first time",
       "userId": 1,
       "categoryId": 3
     },
     {
       "id": 3,
       "title": "Linked-In Profile",
-      "description": "Getting that Linked-In profile to where it needs to be.",
+      "description": "Getting that Linked-In profile to where it needs to be",
       "userId": 1,
       "categoryId": 2
     },
     {
       "id": 4,
       "title": "Weight Training",
-      "description": "Re-starting my weight training journey.",
+      "description": "Re-starting my weight training journey",
       "userId": 1,
       "categoryId": 4
     },
     {
       "title": "NSS Capstone",
-      "description": "Creating my front end capstone with Javascript, CSS, JSX and React!",
+      "description": "Creating my front end capstone with Javascript, CSS, JSX and React",
       "userId": "",
       "categoryId": 1,
       "id": 5
+    },
+    {
+      "title": "Gardening",
+      "description": "I've always had a brown thumb and I'd love to turn it green by learning some beginner gardening techniques.",
+      "userId": "",
+      "categoryId": 3,
+      "id": 6
+    },
+    {
+      "title": "New Costume",
+      "description": "Time to make a new stage costume using fabric, notions & trim I already own.",
+      "userId": "",
+      "categoryId": 2,
+      "id": 7
+    },
+    {
+      "title": "Web Dev Networking",
+      "description": "Time to motivate and start putting energy towards networking events.",
+      "userId": "",
+      "categoryId": 1,
+      "id": 8
     }
   ],
   "projectItems": [
     {
       "id": 2,
-      "progress": "Signed up for a month long class.",
+      "progress": "Signed up for a month long class",
       "dateTime": "2/7/2022, 3:45:58 PM",
       "projectId": 2,
       "userId": 1
     },
     {
       "id": 3,
-      "progress": "Took new, well-lit selfies.",
+      "progress": "Took new, well-lit selfies",
       "dateTime": "3/6/2022, 4:30:13 PM",
       "projectId": 3,
       "userId": 1
     },
     {
       "id": 4,
-      "progress": "Signed up with a new trainer.",
+      "progress": "Signed up with a new trainer",
       "dateTime": "3/1/2022, 9:15:33 AM",
       "projectId": 4,
       "userId": 1
     },
     {
-      "progress": "Learned how to do front cross-overs and side sweeps.",
+      "progress": "Learned how to do front cross-overs and side sweeps",
       "dateTime": "4/4/2022, 5:32:02 PM",
       "projectId": "2",
       "userId": 1,
@@ -163,25 +234,158 @@
       "id": 11
     },
     {
-      "progress": "Created my wireframe and ERD.",
+      "progress": "Created my wireframe and ERD",
       "dateTime": "4/8/2022, 8:09:12 PM",
       "projectId": "5",
       "userId": 1,
       "id": 12
     },
     {
-      "progress": "Created my repo on Github.",
+      "progress": "Created my repo on Github",
       "dateTime": "4/8/2022, 8:09:41 PM",
       "projectId": "5",
       "userId": 1,
       "id": 13
     },
     {
-      "progress": "Made a basic nav bar.",
+      "progress": "Made a basic nav bar",
       "dateTime": "4/8/2022, 8:10:18 PM",
       "projectId": "5",
       "userId": 1,
       "id": 14
+    },
+    {
+      "progress": "Learned how to pass veil between hands",
+      "dateTime": "4/8/2022, 11:11:32 PM",
+      "projectId": "2",
+      "userId": 1,
+      "id": 15
+    },
+    {
+      "progress": "Uploaded new photo",
+      "dateTime": "4/8/2022, 11:15:14 PM",
+      "projectId": "3",
+      "userId": 1,
+      "id": 16
+    },
+    {
+      "progress": "Worked on updating resume",
+      "dateTime": "4/8/2022, 11:15:31 PM",
+      "projectId": "3",
+      "userId": 1,
+      "id": 17
+    },
+    {
+      "progress": "Recorded video of front-end capstone",
+      "dateTime": "4/8/2022, 11:16:14 PM",
+      "projectId": "3",
+      "userId": 1,
+      "id": 18
+    },
+    {
+      "progress": "Met trainer for consultation",
+      "dateTime": "4/8/2022, 11:18:18 PM",
+      "projectId": "4",
+      "userId": 1,
+      "id": 19
+    },
+    {
+      "progress": "Completed first week of workouts at the gym",
+      "dateTime": "4/8/2022, 11:19:31 PM",
+      "projectId": "4",
+      "userId": 1,
+      "id": 20
+    },
+    {
+      "progress": "Had first free-weights session with trainer - even though it's a slow re-start, it's like riding a bike",
+      "dateTime": "4/8/2022, 11:23:25 PM",
+      "projectId": "4",
+      "userId": 1,
+      "id": 21
+    },
+    {
+      "progress": "Impressed myself on leg day with barbell squats",
+      "dateTime": "4/8/2022, 11:24:43 PM",
+      "projectId": "4",
+      "userId": 1,
+      "id": 22
+    },
+    {
+      "progress": "Showed up on a low day - it's half the battle",
+      "dateTime": "4/8/2022, 11:25:21 PM",
+      "projectId": "4",
+      "userId": 1,
+      "id": 23
+    },
+    {
+      "progress": "Did some online research on seeds for our region",
+      "dateTime": "4/8/2022, 11:49:29 PM",
+      "projectId": "6",
+      "userId": 1,
+      "id": 24
+    },
+    {
+      "progress": "Purchased seeds",
+      "dateTime": "4/8/2022, 11:49:44 PM",
+      "projectId": "6",
+      "userId": 1,
+      "id": 25
+    },
+    {
+      "progress": "Germinated seedlings indoors",
+      "dateTime": "4/8/2022, 11:50:35 PM",
+      "projectId": "6",
+      "userId": 1,
+      "id": 26
+    },
+    {
+      "progress": "Introduced seedlings to outdoor sunlight a few hours a day this week",
+      "dateTime": "4/8/2022, 11:51:00 PM",
+      "projectId": "6",
+      "userId": 1,
+      "id": 27
+    },
+    {
+      "progress": "Organized fabric, trim & notions to narrow down color combinations",
+      "dateTime": "4/8/2022, 11:52:37 PM",
+      "projectId": "7",
+      "userId": 1,
+      "id": 28
+    },
+    {
+      "progress": "Settled on palette and drew rough sketches ",
+      "dateTime": "4/8/2022, 11:53:09 PM",
+      "projectId": "7",
+      "userId": 1,
+      "id": 29
+    },
+    {
+      "progress": "Took updated measurements",
+      "dateTime": "4/8/2022, 11:53:27 PM",
+      "projectId": "7",
+      "userId": 1,
+      "id": 30
+    },
+    {
+      "progress": "Searched Slack for upcoming networking events",
+      "dateTime": "4/8/2022, 11:56:11 PM",
+      "projectId": "8",
+      "userId": 1,
+      "id": 31
+    },
+    {
+      "progress": "RSVP'd for Internet Explorers event coming up on Sat, 4/9",
+      "dateTime": "4/8/2022, 11:56:41 PM",
+      "projectId": "8",
+      "userId": 1,
+      "id": 32
+    },
+    {
+      "progress": "Perused Meetup.com for events local to Nashville",
+      "dateTime": "4/8/2022, 11:58:22 PM",
+      "projectId": "8",
+      "userId": 1,
+      "id": 33
     }
   ]
 }
