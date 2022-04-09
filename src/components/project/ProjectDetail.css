@@ -7,3 +7,7 @@ button:disabled,
 button:disabled:hover {
   background-color: lightgray;
 }
+
+section.project {
+  font-family: 'Montserrat Alternates', sans-serif;
+}
