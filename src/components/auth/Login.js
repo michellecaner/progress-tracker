@@ -46,8 +46,9 @@ export const Login = ({setAuthUser}) => {
             </dialog>
             <section>
                 <form className="form--login" onSubmit={handleLogin}>
-                    <h1>Progress Tracker</h1>
-                    <h2>Please sign in</h2>
+                    <div className="sign-in">
+                        <h2>Please sign in</h2>
+                    </div>
                     <fieldset>
                         <label htmlFor="inputEmail"> Email address </label>
                         <input type="email"
@@ -58,16 +59,18 @@ export const Login = ({setAuthUser}) => {
                             value={loginUser.email}
                             onChange={handleInputChange} />
                     </fieldset>
-                    <fieldset>
-                        <button type="submit">
+                      <div className="button-center">
+                        <button className="sign-in-btn" type="submit">
                             Sign in
                         </button>
-                    </fieldset>
+                      </div>
                 </form>
             </section>
+            <div className="register-center">
             <section className="link--register">
                 <Link to="/register">Register for an account</Link>
             </section>
+            </div>
         </main>
     )
 }

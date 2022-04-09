@@ -2,3 +2,46 @@
   min-width: 15rem;
   min-height: 5rem;
 }
+
+.sign-in {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    font-size: large;
+    margin-top: .5rem;
+    margin: 2rem;
+    margin-bottom: .5rem;
+    border-radius: 20px;
+    height: 100px;
+    justify-content: space-evenly;
+  }
+
+  .sign-in-btn {
+    background-color: #19a4cf;
+    border: solid;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+    padding: .5em;
+    border-radius: 50px;
+    margin: .1em;
+    margin-bottom: 1rem;
+    width: 20%;
+    cursor: pointer;
+  }
+
+  .button-center, 
+  .register-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .link--register {
+    font-family: 'Montserrat Alternates', sans-serif;
+  }

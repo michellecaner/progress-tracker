@@ -59,3 +59,24 @@ fieldset input, fieldset button, fieldset select {
 fieldset .alignRight {
   text-align: right;
 }
+
+.new-progress {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  font-size: large;
+  margin-top: .5rem;
+  margin: 2rem;
+  margin-bottom: .5rem;
+  border-radius: 20px;
+  height: 100px;
+  justify-content: space-evenly;
+}
+
+.save-progress {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
